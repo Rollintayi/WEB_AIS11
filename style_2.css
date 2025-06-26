@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* En-tête avec fond blanc et disposition sur toute la largeur */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Logo à gauche */
+.logo img {
+    height: 80px;
+}
+
+/* Menu de navigation centré, espacement égal */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 50px; /* espacement égal entre tous les éléments, y compris le logo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Liens du menu */
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Survol : fond bleu clair */
+.menu a:hover {
+    background-color: #dbeafe; /* bleu clair */
+    color: #003366;
+    border-radius: 25px;
+}
+
+/* Bouton Se connecter à droite */
+.connexion a {
+    background-color: 	#0077b6; /* bleue marine */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    
+
+}
+
+/* Effet au survol du bouton */
+.connexion a:hover {
+    background-color: #001f3f;
+}
+
+
+.form-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.form-bateau .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.form-group input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.btn-ajouter {
+    width: 100%;
+    padding: 16px;
+    margin-top: 40px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn-ajouter:hover {
+    background-color: #005f86;
+}
+/* Trait noir de séparation */
+.footer-line {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 0;
+}
+
+/* Conteneur pied de page */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+}
+
+/* Alignement à droite de l’icône */
+.footer-content {
+    display: flex;
+    justify-content: flex-end;  /* ➡️ pousse l’icône à droite */
+    align-items: center;
+}
+
+/* Style de l’icône */
+.footer-icon {
+    width: 60px;
+    height: auto;
+}
+
+
