@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* En-tête avec fond blanc et disposition sur toute la largeur */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Logo à gauche */
+.logo img {
+    height: 80px;
+}
+
+/* Menu de navigation centré, espacement égal */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 50px; /* espacement égal entre tous les éléments, y compris le logo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Liens du menu */
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Survol : fond bleu clair */
+.menu a:hover {
+    background-color: #dbeafe; /* bleu clair */
+    color: #003366;
+    border-radius: 25px;
+}
+
+/* Bouton Se connecter à droite */
+.connexion a {
+    background-color: 	#0077b6; /* bleue marine */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    
+
+}
+
+/* Effet au survol du bouton */
+.connexion a:hover {
+    background-color: #001f3f;
+}
+
+/* Conteneur de l’image */
+.image-banner {
+    position: relative;
+    width: 100%;
+    height: 600px; /*ajuster la longueur */
+    overflow: hidden;
+}
+
+/* Image qui remplit tout */
+.image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Dégradé fondu vers le bas */
+.fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px; /* hauteur du dégradé */
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+.texte-sur-image {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    right: 500px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    max-width: 650px;
+    line-height: 1.5;
+    z-index: 2; /* au-dessus de l’image et du dégradé */
+
+}
+
+/* Texte  centré en bas */
+.texte-bas-image {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif; /* Police élégante */
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    
+    padding: 12px 24px;
+    border-radius: 15px;
+}
+
+.galerie-section {
+    background-color: white;
+    padding: 80px 100px; /* marge importante gauche/droite */
+    text-align: center;
+}
+
+.galerie-titre {
+    font-family: 'Playfair Display', serif; /* police */
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #102c57; /* bleu profond stylé */
+    text-transform: uppercase; /* tout en majuscules */
+    letter-spacing: 1px;        /* espacement */
+}
+
+.galerie {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* réduit l’espace horizontal */
+    flex-wrap: wrap;
+}
+
+.galerie figure {
+    flex: 1;
+    max-width: 25%;
+    margin: 0;
+}
+
+.galerie img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.galerie figcaption {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;   /* ou 'Lora', 'Playfair Display'... */
+    font-size: 16px;
+    font-weight: 400;
+    color: #0d2c54;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+/* Section du bouton ajouter bateau */
+.ajouter-bateau-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Style du bouton */
+.btn-ajouter {
+    background-color: #0077b6;
+    color: white;
+    font-size: 24px;        /* 🔠 texte plus grand */
+    font-weight: bold;
+    padding: 20px 60px;     /* 📏 plus de hauteur (20px) et largeur (60px) */
+    border: none;
+    border-radius: 35px;    /* bord arrondi encore plus doux */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Effet au survol */
+.btn-ajouter:hover {
+    background-color: #005f86;
+}
+/* Trait noir de séparation */
+.footer-line {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 0;
+}
+
+/* Conteneur pied de page */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+}
+
+/* Alignement à droite de l’icône */
+.footer-content {
+    display: flex;
+    justify-content: flex-end;  /* ➡️ pousse l’icône à droite */
+    align-items: center;
+}
+
+/* Style de l’icône */
+.footer-icon {
+    width: 60px;
+    height: auto;
+}
