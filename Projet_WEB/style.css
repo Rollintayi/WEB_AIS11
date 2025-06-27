@@ -1,0 +1,212 @@
+/* --- Variables et Style Global --- */
+/* On utilise des variables CSS pour facilement changer les couleurs.
+   [cite_start]Ces couleurs sont inspirées de votre charte graphique[cite: 11, 22]. */
+:root {
+    --primary-dark-blue: #12255B;
+    --secondary-medium-blue: #3386EC;
+    --light-accent-blue: #99AEE9;
+    --background-light: #f4f6f9; /* Un gris très clair pour le fond */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --border-color: #dddddd;
+}
+
+/* Style de base pour toute la page */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Police de caractères suggérée dans la charte graphique [cite: 19] */
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.menu {
+    flex-grow: 1; /* Permet au menu de prendre tout l'espace disponible */
+    display: flex;
+    justify-content: center; /* Centre le menu horizontalement */
+}
+/* Logo à gauche */
+.logo img {
+    height: 80px;
+}
+
+/* Menu de navigation centré, espacement égal */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 50px; /* espacement égal entre tous les éléments, y compris le logo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Liens du menu */
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Survol : fond bleu clair */
+.menu a:hover {
+    background-color: #dbeafe; /* bleu clair */
+    color: #003366;
+    border-radius: 25px;
+}
+
+/* Bouton Se connecter à droite */
+.connexion a {
+    background-color: 	#3386EC; /* bleue marine */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    
+
+}
+
+/* Effet au survol du bouton */
+.connexion a:hover {
+    background-color: #001f3f;
+}
+/* --- Mise en page principale (Header, Main, Footer) --- */
+[cite_start]/* Style pour l'en-tête, commun à toutes les pages [cite: 12] */
+header {
+    background-color: var(--primary-dark-blue);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Conteneur principal pour le contenu de la page */
+main {
+    max-width: 1400px; /* Limite la largeur sur les grands écrans */
+    margin: 2rem auto; /* Centre le contenu horizontalement */
+    padding: 0 2rem;   /* Espacement sur les côtés */
+}
+
+[cite_start]/* Style pour le pied de page, commun à toutes les pages [cite: 12] */
+footer {
+    background-color: var(--primary-dark-blue);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Style pour les titres de section */
+h2 {
+    color: var(--primary-dark-blue);
+    border-bottom: 2px solid var(--secondary-medium-blue);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Style des Éléments Spécifiques --- */
+
+/* Conteneur pour la carte Plotly */
+#map-container {
+    width: 100%;
+    height: 600px; /* Hauteur fixe nécessaire pour la carte */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+/* --- Style de la Table des Données --- */
+#boats-table {
+    width: 100%;
+    border-collapse: collapse; /* Fusionne les bordures des cellules */
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Pour que le border-radius s'applique aux coins */
+}
+
+/* Style pour les cellules d'en-tête (th) et de données (td) */
+#boats-table th, 
+#boats-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Style spécifique pour la ligne d'en-tête */
+#boats-table thead tr {
+    background-color: var(--secondary-medium-blue);
+    color: var(--text-light);
+    font-size: 1.1em;
+}
+
+/* Style pour les lignes du corps du tableau (une ligne sur deux a un fond différent) */
+#boats-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* Effet de survol sur les lignes du tableau pour une meilleure interactivité */
+#boats-table tbody tr:hover {
+    background-color: var(--light-accent-blue);
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* --- Responsive Design --- */
+/* Pour que le site s'affiche bien sur les petits écrans (mobiles) */
+@media (max-width: 768px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #boats-table th, 
+    #boats-table td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+#clear-data,
+#load-data,
+#type,
+#path,
+#predict-clusters {
+    background-color: var(--secondary-medium-blue);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+}
