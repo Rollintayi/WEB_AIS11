@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Entête personnalisée</title>
     <link rel="stylesheet" href="style_2.css">
-
+    
 </head>
 <body>
 
@@ -32,7 +32,7 @@
     <section class="form-container">
     <h2 class="form-title">Ajouter un point de donnée</h2>
 
-        <form class="form-bateau" action="#" method="post">
+        <form class="form-bateau" action="connexion_base.php" method="post">
                <div class="form-grid">
                 <!-- <div class="form-group">
                     <label for="ID_point_naviguation">ID du point de naviguation</label>
@@ -45,7 +45,7 @@
 
                 <div class="form-group">
                     <label for="mmsi">MMSI du bateau</label>
-                    <input type="text" id="mmsi" name="mmsi" placeholder="Ex : 123456789">
+                    <<input type="text" id="mmsi" name="MMSI" placeholder="Ex : 123456789">
                 </div>
 
                 <div class="form-group">
@@ -60,49 +60,49 @@
 
                 <div class="form-group">
                     <label for="latitude">Latitude</label>
-                    <input type="number" id="latitude" name="latitude" placeholder="En mètre" step="0.0001">
+                    <input type="number" id="latitude" name="Latitude" placeholder="En mètre" step="0.0001">
                 </div>
 
                 <div class="form-group">
                     <label for="longitude">Longitude</label>
-                    <input type="number" id="longitude" name="longitude" placeholder="En mètre" step="0.0001">
+                    <input type="number" id="longitude" name="Longitude" placeholder="En mètre" step="0.0001">
                 </div>
 
                 <div class="form-group">
                     <label for="longueur">Longueur</label>
-                    <input type="number" id="longueur" name="longueur" placeholder="En mètre" step="0.01">
+                    <input type="number" id="longueur" name="Longueur" placeholder="En mètre" step="0.01">
                 </div>
 
                 <div class="form-group">
                     <label for="tirant d'eau">tirant d'eau</label>
-                    <input type="number" id="tirant d'eau" name="tirant d'eau" placeholder="En mètre" step="0.01">
+                    <input type="number" id="tirant d'eau" name="Tirant_eau" placeholder="En mètre" step="0.01">
                 </div>
                 <div class="form-group">
                     <label for="longueur">Largeur</label>
-                    <input type="number" id="largeur" name="largeur" placeholder="En mètre" step="0.01">
+                    <input type="number" id="largeur" name="Largeur" placeholder="En mètre" step="0.01">
                 </div>
 
                 <div class="form-group">
                     <label for="cap_COG">Cap</label>
-                    <input type="number" id="Cap" name="cap" placeholder="En mètre" step="0.01">
+                    <input type="number" id="Cap" name="CAP_COG" placeholder="En mètre" step="0.01">
                 </div>
 
                 <div class="form-group">
                     <label for="sog">Vitesse SOG</label>
-                    <input type="number" id="sog" name="sog" placeholder="Valeur" step="0.01">
+                    <input type="number" id="sog" name="Vitesse_SOG" placeholder="Valeur" step="0.01">
                 </div>
 
                 <div class="form-group">
                     <label for="etat">État du bateau</label>
-                    <select id="etat" name="etat">
+                    <select id="etat" name="ID_etat">
                         <option value="">-- Sélectionnez un état --</option>
-                        <option value="En mer">0</option>
-                        <option value="Au port">1</option>
-                        <option value="A quai">2</option>
-                        <option value="A l'arrêt">3</option>
-                        <option value="En manoeuvre">5</option>
-                        <option value="En panne">8</option>
-                        <option value="Hors service">15</option>
+                        <option value="0">En mer</option>
+                        <option value="1">Au port</option>
+                        <option value="2">A quai</option>
+                        <option value="3">A l'arrêt</option>
+                        <option value="5">En manoeuvre</option>
+                        <option value="8">En panne</option>
+                        <option value="15">Hors service</option>
                     </select>
                 </div>
             </div>
