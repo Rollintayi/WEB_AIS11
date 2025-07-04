@@ -1,0 +1,119 @@
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.menu {
+    flex-grow: 1; /* Permet au menu de prendre tout l'espace disponible */
+    display: flex;
+    justify-content: center; /* Centre le menu horizontalement */
+}
+/* Logo à gauche */
+.logo img {
+    height: 80px;
+}
+
+/* Menu de navigation centré, espacement égal */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 50px; /* espacement égal entre tous les éléments, y compris le logo */
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Lobster';
+}
+
+/* Liens du menu */
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Survol : fond bleu clair */
+.menu a:hover {
+    background-color: #dbeafe; /* bleu clair */
+    color: #3386EC;
+    border-radius: 25px;
+}
+
+/* Bouton Se connecter à droite */
+.connexion a {
+    background-color: 	#3386EC; /* bleue marine */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    
+
+}
+
+/* Effet au survol du bouton */
+.connexion a:hover {
+    background-color: #001f3f;
+}
+
+ul{
+    list-style: none;
+
+}
+
+
+
+   h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+/* Trait noir de séparation */
+.footer-line {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 0;
+}
+
+/* Conteneur pied de page */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+}
+
+/* Alignement à droite de l’icône */
+.footer-content {
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+}
+
+/* Style de l’icône */
+.footer-icon {
+    width: 60px;
+    height: auto;
+}
